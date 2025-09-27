@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="d-flex justify-space-b align-items-c pos-r width-100">
+    <div class="d-flex justify-space-b align-items-c width-100 pad-2 only-des">
+      <div class="d-flex gap-3 align-items-c">
+        <div>
+          <a href="index.html">
+            <img src="images/logo.svg" alt="">
+          </a>
+        </div>
+
+        <div>
+          <nav class="d-flex gap-2">
+            <li class="pad-1-tb features">
+
+              <span class="d-flex align-items-c gap-05 color-gray500 trans-all-03-ease cursor-p font-w-500">
+                Features
+                <ion-icon name="chevron-down-outline" class="icon-1 trans-all-03-ease"></ion-icon>
+              </span>
+              <div
+                class="features-menu d-flex trans-all-03-ease pos-a flex-column pad-1-5 gap-1 box-shadow width-max-con height-max-con border-r-10 point-event-none opacity-0">
+                <div>
+                  <a href="#" class="d-flex gap-1 align-items-c color-gray500 n-hov trans-all-03-ease font-w-500">
+                    <img src="images/icon-todo.svg" alt="">
+                    Todo List
+                  </a>
+                </div>
+
+                <div>
+                  <a href="#" class="d-flex gap-1 align-items-c color-gray500 n-hov trans-all-03-ease font-w-500">
+                    <img src="images/icon-calendar.svg" alt="">
+                    Calendar
+                  </a>
+                </div>
+
+                <div>
+                  <a href="#" class="d-flex gap-1 align-items-c color-gray500 n-hov trans-all-03-ease font-w-500">
+                    <img src="images/icon-reminders.svg" alt="">
+                    Reminders
+                  </a>
+                </div>
+
+                <div>
+                  <a href="#" class="d-flex gap-1 align-items-c color-gray500 n-hov trans-all-03-ease font-w-500">
+                    <img src="images/icon-planning.svg" alt="">
+                    Planning
+                  </a>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="pad-1-tb company">
+              <span class="d-flex align-items-c gap-05 color-gray500 trans-all-03-ease cursor-p font-w-500">
+                Company
+                <ion-icon name="chevron-down-outline" class="icon-2 trans-all-03-ease"></ion-icon>
+              </span>
+              <div
+                class="company-menu trans-all-03-ease pos-a box-shadow d-flex flex-column pad-1-5 gap-1 width-max-con height-max-con border-r-10 point-event-none opacity-0">
+                <div>
+                  <a href="#" class="color-gray500 n-hov trans-all-03-ease font-w-500">History</a>
+                </div>
+
+                <div>
+                  <a href="#" class="color-gray500 n-hov trans-all-03-ease font-w-500">Our Team</a>
+                </div>
+
+                <div>
+                  <a href="#" class="color-gray500 n-hov trans-all-03-ease font-w-500">Blog</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="pad-1-tb">
+              <a href="#" class="color-gray500 trans-all-03-ease n-hov font-w-500">Careers</a>
+            </li>
+
+            <li class="pad-1-tb">
+              <a href="#" class="color-gray500 trans-all-03-ease n-hov font-w-500">About</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+
+      <div class="d-flex gap-1">
+        <button>
+          <a href="#" class="color-gray500 font-w-500 n-hov trans-all-03-ease">Login</a>
+        </button>
+        <button class="reg-btn pad-07-1 trans-all-03-ease border-r-10">
+          <a href="#" class="color-gray500 font-w-500 n-hov trans-all-03-ease">Register</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- Only Mobile -->
+    <div class="only-mob width-100">
+      <div class="pad-1-5 d-flex justify-space-b width-100 align-items-c">
+        <div class="width-max-con height-max-con">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="" class="height-auto logo-mob">
+          </a>
+        </div>
+
+        <div id="menu-opener" class="d-flex flex-column">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="width-100">
+    <!-- Only Desktop -->
+    <div class="d-flex justify-space-b width-100 align-items-c only-des">
+      <div class="d-flex flex-column gap-2">
+        <h1 class="color-gray950 font-w-700 ">Make<br> remote work</h1>
+        <h3 class="color-gray500 font-w-500 line-height-1-7">Get your team in sync, no matter your location.<br>
+          Streamline processes, create team rituals, and<br>
+          watch productivity soar.
+        </h3>
+        <div class="d-flex flex-column gap-6">
+          <button class="learn-btn width-max-con pad-1 border-r-10 trans-all-03-ease">
+            <a href="#" class="color-gray50 font-w-700">Learn more</a>
+          </button>
+
+          <div class="d-flex gap-2">
+            <img src="images/client-databiz.svg" alt="">
+            <img src="images/client-audiophile.svg" alt="">
+            <img src="images/client-meet.svg" alt="">
+            <img src="images/client-maker.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <img src="images/image-hero-desktop.png" alt="" class="hero-image height-auto">
+    </div>
+
+    <!-- Only Mobile -->
+    <div class="only-mob">
+      <div class="width-100 d-flex flex-column justify-c align-items-c gap-2">
+        <img src="images/image-hero-mobile.png" alt="hero-image" class="height-auto width-100">
+        <h1 class="color-gray950 font-w-700 text-center">Make remote work</h1>
+        <p class="color-gray500 font-w-500 text-center line-height-1-7">
+          Get your team in sync, no matter your<br>
+          location. Streamline processes, create<br>
+          team rituals, and watch productivity soar.
+        </p>
+        <button class="learn-btn pad-07-1 border-r-10 trans-all-03-ease">
+          <a href="#" class="color-gray50 trans-all-03-ease n-hov font-w-500">Learn more</a>
+        </button>
+        <div class="d-flex gap-1 justify-c align-items-c">
+          <img src="images/client-databiz.svg" alt="" class="tiny-log height-auto">
+          <img src="images/client-audiophile.svg" alt="" class="tiny-log height-auto">
+          <img src="images/client-meet.svg" alt="" class="tiny-log height-auto">
+          <img src="images/client-maker.svg" alt="" class="tiny-log height-auto">
+        </div>
+      </div>
+    </div>
+
+    <div id="side-bar-window" class="pos-a trans-all-03-ease point-event-none opacity-0">
+      <div id="side-bar" class="pos-a d-flex flex-column gap-2 trans-all-03-ease">
+        <ion-icon name="close-outline" class="icon-x pos-a"></ion-icon>
+
+        <div>
+          <nav class="d-flex flex-column gap-1">
+            <li>
+              <span class="color-gray500 d-flex gap-05 font-w-500 features-mob">
+                Features
+                <ion-icon name="chevron-down-outline" class="trans-all-03-ease icon-1-mob"></ion-icon>
+              </span>
+
+              <div class="features-menu-mob opacity-0 trans-all-03-ease point-event-none">
+                <div class="d-flex flex-column gap-1 pad-1-5">
+                  <div class="d-flex gap-1">
+                    <img src="images/icon-todo.svg" alt="">
+                    <a href="#" class="color-gray500 font-w-500 n-hov trans-all-03-ease">Todo List</a>
+                  </div>
+                  <div class="d-flex gap-1">
+                    <img src="images/icon-calendar.svg" alt="">
+                    <a href="#" class="color-gray500 font-w-500 n-hov trans-all-03-ease">Calendar</a>
+                  </div>
+                  <div class="d-flex gap-1">
+                    <img src="images/icon-reminders.svg" alt="">
+                    <a href="#" class="color-gray500 font-w-500 n-hov trans-all-03-ease">Reminders</a>
+                  </div>
+                  <div class="d-flex gap-1">
+                    <img src="images/icon-planning.svg" alt="">
+                    <a href="#" class="color-gray500 font-w-500 n-hov trans-all-03-ease">Planning</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <span class="color-gray500 d-flex gap-05 font-w-500 company-mob">
+                Company
+                <ion-icon name="chevron-down-outline" class="trans-all-03-ease icon-2-mob"></ion-icon>
+              </span>
+
+              <div class="company-menu-mob opacity-0 trans-all-03-ease point-event-none">
+                <div class="d-flex flex-column gap-1 pad-1-5">
+                  <div>
+                    <a href="#" class="color-gray500 font-w-500 trans-all-03-ease n-hov">History</a>
+                  </div>
+
+                  <div>
+                    <a href="#" class="color-gray500 font-w-500 trans-all-03-ease n-hov">Our Team</a>
+                  </div>
+
+                  <div>
+                    <a href="#" class="color-gray500 font-w-500 trans-all-03-ease n-hov">Blog</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="color-gray500 font-w-500 n-hov trans-all-03-ease">Careers</a>
+            </li>
+
+            <li>
+              <a href="#" class="color-gray500 font-w-500 n-hov trans-all-03-ease">About</a>
+            </li>
+          </nav>
+        </div>
+
+        <div class="d-flex flex-column gap-1">
+          <button>
+            <a href="#" class="color-gray500 font-w-500 n-hov trans-all-03-ease">Login</a>
+          </button>
+
+          <button class="reg-btn pad-07-1 border-r-10 n-hov trans-all-03-ease">
+            <a href="#" class="color-gray500 font-w-500 trans-all-03-ease n-hov">Register</a>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+
+  <script src="scripts.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
